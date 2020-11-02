@@ -14,35 +14,23 @@
     <!-- Font-Awesome Link -->
     <link
       rel="stylesheet"
-      href="../css/fontawesome-free-5.15.1-web/css/all.css"
+      href="../css/fontawesome-free-5.15.1-web/css/all.min.css"
     />
   </head>
   <body>
-    <div class="codingExample-first__page">
-      <div class="container header py-5">
+    <!-- ************************************************** CodingExample_Page Start ************************************************** -->
+    <div class="codingExample_page">
+      <!-- ---------- Header Start ---------- -->
+      <div class="header container py-5">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand text-white" href="#" style="font-size: 25px"
             ><i class="fa fa-book text-white mx-2" aria-hidden="true"></i
             >TutorPoint</a
           >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="../index.html"
-                  >Home <span class="sr-only">(current)</span></a
-                >
+                <a class="nav-link" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./coursesPage.html">Courses</a>
@@ -51,83 +39,70 @@
                 <a class="nav-link" href="./ebookPage.html">Ebooks</a>
               </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <a
-                href="./ebookPage.html"
-                class="btn login_btn my-2 my-sm-0 text-white px-5"
-                type="submit"
-              >
+            <form class="form-inline my-2">
+              <a href="./ebookPage.html" class="btn button" type="submit">
                 Login
               </a>
             </form>
           </div>
         </nav>
-        <p
-          class="text-white font-weight-bold mx-4"
-          style="position: relative; top: 100px"
-        >
-          Home / <span style="color: var(--main-pink)">Coding Example</span>
-        </p>
-        <div class="codingExample_page_cotent text-center">
-          <div
-            style="
-              position: relative;
-              top: 196px;
-              background-color: var(--main-pink);
-              width: 500px;
-              z-index: 1;
-            "
-            class="mx-auto"
-          >
-            <h5 class="text-white py-3">Search your any Coding Example</h5>
-          </div>
-          <form
-            style="
-              position: relative;
-              top: 190px;
-              background-color: var(--main-pink);
-            "
-            class="py-5 mb-5"
-          >
-            <div class="row align-items-center justify-content-center">
-              <div class="col-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Code Name"
-                  style="border-radius: 0px"
-                />
-              </div>
-              <div class="col-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Category program (e.g java,c,c++)"
-                  style="border-radius: 0px"
-                />
-              </div>
-              <button
-                class="btn srearch_btn my-2 my-sm-0 text-white px-5"
-                type="submit"
-              >
-                Sing Up Now
-              </button>
-            </div>
-          </form>
+      </div>
+      <!-- ---------- Header End ---------- -->
+
+      <!-- ---------- codingExample_Page_content Start ---------- -->
+      <div class="codingExample_page_content container">
+        <nav aria-label="breadcrumb ">
+          <ol class="breadcrumb bg-transparent font-weight-bold">
+            <li class="breadcrumb-item">
+              <a href="#" class="text-white text-decoration-none">Home</a>
+            </li>
+            <li
+              class="breadcrumb-item active"
+              aria-current="page"
+              style="color: var(--main-pink)"
+            >
+              Coding Examples
+            </li>
+          </ol>
+        </nav>
+        <div class="search_box_heading mx-auto">
+          <h5 class="text-white py-3 mb-1">Search your any Coding Example</h5>
         </div>
+        <form class="search_box container py-5 mb-5">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Code Name"
+            style="border-radius: 0px"
+          />
+
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Category program (e.g java,c,c++)"
+            style="border-radius: 0px"
+          />
+
+          <button
+            class="btn srearch_btn my-2 my-sm-0 text-white px-5"
+            type="submit"
+          >
+            Sing Up Now
+          </button>
+        </form>
       </div>
     </div>
-    <div
-      class="container codingExample-second__page position-relative"
-      style="top: 100px"
-    >
+    <!-- ************************************************** CodingExample_Page End ************************************************** -->
+
+    <!-- ************************************************** ProgramList_Page Start ************************************************** -->
+    <div class="container programList_Page">
       <hr />
       <h2 class="mb-4">Program List in C →</h2>
       <div class="row">
         <div class="col-4">
           <div class="card" style="width: 22rem">
             <div class="card-body p-3">
-              <h6 class="mb-3 mt-0 text-muted">Start with Basic Programs</h6>
+              <h6>Start with Basic Programs</h6>
 
               <li>Hello world!</li>
               <li>Taking Input from User</li>
@@ -145,7 +120,7 @@
         <div class="col-4">
           <div class="card" style="width: 22rem">
             <div class="card-body p-3">
-              <h6 class="mb-3 mt-0 text-muted">Loops</h6>
+              <h6>Loops</h6>
 
               <li>
                 Basic <span style="color: var(--main-pink)">for</span> Loop
@@ -168,7 +143,7 @@
         <div class="col-4">
           <div class="card" style="width: 22rem">
             <div class="card-body p-3">
-              <h6 class="mb-3 mt-0 text-muted">Number Crunching</h6>
+              <h6>Number Crunching</h6>
 
               <li>Program to find Average of n Numbers</li>
               <li>Armstrong Number</li>
@@ -202,7 +177,7 @@
         <div class="col-4 mt-4">
           <div class="card" style="width: 22rem">
             <div class="card-body p-3">
-              <h6 class="mb-3 mt-0 text-muted">Concept of Arrays</h6>
+              <h6>Concept of Arrays</h6>
 
               <li>Reverse an Array</li>
               <li>Insert Element to Array</li>
@@ -223,7 +198,7 @@
         <div class="col-4">
           <div class="card" style="width: 22rem">
             <div class="card-body p-3">
-              <h6 class="mb-3 mt-0 text-muted">Pointers</h6>
+              <h6>Pointers</h6>
 
               <li>Simple Program</li>
               <li>Memory Management</li>
@@ -242,7 +217,7 @@
         <div class="col-4 mt-4">
           <div class="card" style="width: 22rem">
             <div class="card-body p-3">
-              <h6 class="mb-3 mt-0 text-muted">Concept of Recursion</h6>
+              <h6>Concept of Recursion</h6>
               <li>Adding Two Numbers</li>
               <li>Factorial</li>
               <li>Fibonacci Series</li>
@@ -260,113 +235,116 @@
         </div>
       </div>
     </div>
-    <div
-      class="codingExample__footer container-fluid mb-0 position-relative"
-      style="background-color: var(--main-green); top: 200px"
-    >
-      <div class="row">
-        <div class="col-6 pl-2 mt-3 d-inline">
-          <a class="navbar-brand text-white" href="#" style="font-size: 25px">
-            <i class="fa fa-book text-white" aria-hidden="true"></i>
-            TutorPoint
-          </a>
-          <div class="logo text-primary mt-4">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-google"></i>
-          </div>
-          <p style="font-size: 14px">
-            Copyright ©2020 All rights reserved | Made by TutorPoint
-          </p>
+    <!-- ************************************************** ProgramList_Page End ************************************************** -->
+
+    <!-- ************************************************** CodingExample_footer Start ************************************************** -->
+    <div class="codingExample_footer footer">
+      <div class="left_side mt-3">
+        <a class="navbar-brand text-white" href="#" style="font-size: 25px">
+          <i class="fa fa-book text-white" aria-hidden="true"></i>
+          TutorPoint
+        </a>
+        <div class="logo text-primary mt-4">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google"></i>
         </div>
-        <div class="col-6">
-          <div class="row">
-            <div class="col-3 mt-3">
-              <h5 class="mb-0 ml-3">ABOUT US</h5>
-              <ul class="navbar-nav">
-                <a class="nav-link" href="#">
-                  <i class="text-dark">•</i>
-                  <i class="fas fa-check text-dark"></i> Company</a
-                >
-                <a class="nav-link" href="#">
-                  <i class="text-dark">•</i>
-                  <i class="fas fa-check text-dark"></i> Our Team</a
-                >
-                <a class="nav-link" href="#">
-                  <i class="text-dark">•</i>
-                  <i class="fas fa-check text-dark"></i> Careers</a
-                >
-                <a class="nav-link" href="#">
-                  <i class="text-dark">•</i>
-                  <i class="fas fa-check text-dark"></i> Privacy Policy</a
-                >
-                <a class="nav-link" href="#">
-                  <i class="text-dark">•</i>
-                  <i class="fas fa-check text-dark"></i> Cookies Policy</a
-                >
-                <a class="nav-link" href="#">
-                  <i class="text-dark">•</i>
-                  <i class="fas fa-check text-dark"></i> Terms of use</a
-                >
-                <a class="nav-link" href="#">
-                  <i class="text-dark">•</i>
-                  <i class="fas fa-check text-dark"></i> Investors</a
-                >
-              </ul>
-            </div>
-            <div class="col-3 mt-3 mx-5">
-              <h5 class="mb-0 ml-3">EXTRA LINKS</h5>
-              <ul class="navbar-nav">
-                <a class="nav-link" href="#">
-                  <i class="text-dark">•</i>
-                  <i class="fas fa-check text-dark"></i> Articles</a
-                >
-                <a class="nav-link" href="#">
-                  <i class="text-dark">•</i>
-                  <i class="fas fa-check text-dark"></i> Dev Tools</a
-                >
-                <a class="nav-link" href="#">
-                  <i class="text-dark">•</i>
-                  <i class="fas fa-check text-dark"></i> Free Graphics</a
-                >
-                <a class="nav-link" href="#">
-                  <i class="text-dark">•</i>
-                  <i class="fas fa-check text-dark"></i> File Conversion</a
-                >
-                <a class="nav-link" href="#">
-                  <i class="text-dark">•</i>
-                  <i class="fas fa-check text-dark"></i> Shared Tutorials</a
-                >
-                <a class="nav-link" href="#">
-                  <i class="text-dark">•</i>
-                  <i class="fas fa-check text-dark"></i> NetMeeting</a
-                >
-                <a class="nav-link" href="#">
-                  <i class="text-dark">•</i>
-                  <i class="fas fa-check text-dark"></i> Whiteboard</a
-                >
-              </ul>
-            </div>
-            <div class="col-4 mt-3">
-              <h5 class="mb-0 ml-3">CONTACT US</h5>
-              <ul class="navbar-nav text-muted">
-                <p><i class="text-dark mr-2">•</i> Address:Mumbai,</p>
-                <p class="ml-3">Maharashtra,404041</p>
-                <p>
-                  <i class="text-dark mr-2">•</i> Website:
-                  <span class="text-primary">www.Tutorpoint.com</span>
-                </p>
-              </ul>
-            </div>
-          </div>
+        <p style="font-size: 14px">
+          Copyright ©2020 All rights reserved | Made by TutorPoint
+        </p>
+      </div>
+      <div class="right_side">
+        <div>
+          <h5>ABOUT US</h5>
+          <ul class="navbar-nav">
+            <a class="nav-link" href="#">
+              <i>•</i>
+              <i class="fas fa-check"></i> Company</a
+            >
+            <a class="nav-link" href="#">
+              <i>•</i>
+              <i class="fas fa-check"></i> Our Team</a
+            >
+            <a class="nav-link" href="#">
+              <i>•</i>
+              <i class="fas fa-check"></i> Careers</a
+            >
+            <a class="nav-link" href="#">
+              <i>•</i>
+              <i class="fas fa-check"></i> Privacy Policy</a
+            >
+            <a class="nav-link" href="#">
+              <i>•</i>
+              <i class="fas fa-check"></i> Cookies Policy</a
+            >
+            <a class="nav-link" href="#">
+              <i>•</i>
+              <i class="fas fa-check"></i> Terms of use</a
+            >
+            <a class="nav-link" href="#">
+              <i>•</i>
+              <i class="fas fa-check"></i> Investors</a
+            >
+          </ul>
+        </div>
+        <div>
+          <h5>EXTRA LINKS</h5>
+          <ul class="navbar-nav">
+            <a class="nav-link" href="#">
+              <i>•</i>
+              <i class="fas fa-check"></i> Articles</a
+            >
+            <a class="nav-link" href="#">
+              <i>•</i>
+              <i class="fas fa-check"></i> Dev Tools</a
+            >
+            <a class="nav-link" href="#">
+              <i>•</i>
+              <i class="fas fa-check"></i> Free Graphics</a
+            >
+            <a class="nav-link" href="#">
+              <i>•</i>
+              <i class="fas fa-check"></i> File Conversion</a
+            >
+            <a class="nav-link" href="#">
+              <i>•</i>
+              <i class="fas fa-check"></i> Shared Tutorials</a
+            >
+            <a class="nav-link" href="#">
+              <i>•</i>
+              <i class="fas fa-check"></i> NetMeeting</a
+            >
+            <a class="nav-link" href="#">
+              <i>•</i>
+              <i class="fas fa-check"></i> Whiteboard</a
+            >
+          </ul>
+        </div>
+        <div>
+          <h5>CONTACT US</h5>
+          <ul class="navbar-nav text-muted">
+            <p><i class="text-dark mr-2">•</i> Address:10th Floor, VIP</p>
+            <p class="ml-3">Road,Mumbai,</p>
+            <p class="ml-3">Maharashtra,404041</p>
+            <p>
+              <i class="text-dark mr-2">•</i> Website:
+              <a class="websiteLink" href="#">www.Tutorpoint.com</a>
+            </p>
+          </ul>
         </div>
       </div>
-      <p class="text-muted text-center pb-4 mb-0">www.tutorialspoint.com</p>
     </div>
+    <p
+      class="text-muted text-center pb-4"
+      style="background-color: var(--main-green); margin-bottom: -1.5rem"
+    >
+      www.tutorialspoint.com
+    </p>
+    <!-- ************************************************** Home__footer End ************************************************** -->
+
     <!-- Bootstrap JavaScript & jQuery -->
     <script src="../js/jquery-3.5.1.slim.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
-.

@@ -130,6 +130,51 @@
 }
 /* ************************* Home_Page styling End ************************* */
 
+/* ************************* CodingExample_Page styling Start ************************* */
+.codingExample_page {
+  background: linear-gradient(rgba(16, 29, 44, 0.75), rgba(16, 29, 44, 0.75)),
+    url("../Images/codingExample-Page-bg.jpg") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 430px;
+}
+
+/* ---------- CodingExample_Page_content styling Start ---------- */
+.codingExample_page .codingExample_page_content .search_box_heading {
+  background-color: var(--main-pink);
+  width: 500px;
+  z-index: 1;
+  text-align: center;
+}
+.codingExample_page .codingExample_page_content .search_Example_box {
+  background-color: var(--main-pink);
+}
+.search_box {
+  background-color: var(--main-pink);
+}
+
+/* ---------- ProgramList_Page styling Start ---------- */
+.programList_Page {
+  margin: 8rem auto;
+}
+.programList_Page .card-body h6 {
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  color: rgb(145, 143, 143);
+}
+
+/* ---------- CodingExample_footer styling Start ---------- */
+.codingExample_footer .right_side .nav-link {
+  color: black;
+  cursor: text;
+}
+.codingExample_footer .right_side .websiteLink:hover {
+  color: var(--main-pink);
+  text-decoration: none;
+}
+
+/* ************************* CodingExample_Page styling End ************************* */
+
 .coursesPage__footer .nav-link {
   margin: -8px 0;
   font-size: 15px;
