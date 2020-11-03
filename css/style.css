@@ -3,6 +3,8 @@
   --main-pink: #d82a4e;
   --main-green: rgb(134, 180, 43);
   --text-white: white;
+  --text-muted: rgb(145, 143, 143);
+  --bg-blur: linear-gradient(rgba(16, 29, 44, 0.7), rgba(16, 29, 44, 0.7));
 }
 
 /* ************************* Comman Styling Start ************************* */
@@ -14,10 +16,26 @@
   padding: 0.4rem 3.2rem;
   color: var(--text-white);
 }
+.button:hover {
+  color: var(--text-white);
+}
+.button-1 {
+  display: block !important;
+  background-color: var(--main-pink);
+  border: 2px solid var(--main-pink);
+  border-radius: 0px;
+  margin: 0.2rem 0;
+  margin-right: 0.5rem;
+  padding: 0.4rem 1rem;
+  color: var(--text-white);
+}
+.button-1:hover {
+  color: var(--text-white);
+}
 
 .search_box {
   width: 85%;
-  margin: 0 auto !important;
+  margin: -0.4rem auto !important;
   text-align: center;
   display: flex;
   justify-content: space-evenly;
@@ -38,6 +56,17 @@
 }
 .header .navbar .nav-item .nav-link:hover {
   color: var(--main-pink);
+}
+
+/* ---------- Search_box styling Start ---------- */
+.search_box_heading {
+  background-color: var(--main-pink);
+  width: 500px;
+  z-index: 1;
+  text-align: center;
+}
+.search_box {
+  background-color: var(--main-pink);
 }
 
 /* ---------- Footer styling Start ---------- */
@@ -66,12 +95,15 @@
 .footer .right_side .nav-link i {
   color: var(--dark);
 }
-
+.footer .websiteLink:hover {
+  color: var(--main-pink);
+  text-decoration: none;
+}
 /* ************************* Comman Styling End ************************* */
 
 /* ************************* Home_Page styling start ************************* */
 .home__page {
-  background: linear-gradient(rgba(16, 29, 44, 0.7), rgba(16, 29, 44, 0.7)),
+  background: var(--bg-blur),
     url("../Images/home-bg2.jpg") center/cover no-repeat;
   width: 100%;
   height: 100vh;
@@ -132,25 +164,15 @@
 
 /* ************************* CodingExample_Page styling Start ************************* */
 .codingExample_page {
-  background: linear-gradient(rgba(16, 29, 44, 0.75), rgba(16, 29, 44, 0.75)),
-    url("../Images/codingExample-Page-bg.jpg") center no-repeat;
-  background-size: cover;
+  background: var(--bg-blur),
+    url("../Images/codingExample-Page-bg.jpg") center/cover no-repeat;
   width: 100%;
-  height: 430px;
+  height: 55vh;
 }
 
-/* ---------- CodingExample_Page_content styling Start ---------- */
-.codingExample_page .codingExample_page_content .search_box_heading {
-  background-color: var(--main-pink);
-  width: 500px;
-  z-index: 1;
-  text-align: center;
-}
-.codingExample_page .codingExample_page_content .search_Example_box {
-  background-color: var(--main-pink);
-}
-.search_box {
-  background-color: var(--main-pink);
+.codingExample_page .codingExample_page_content .search_box .button {
+  background-color: black !important;
+  padding: 0.6rem 3.2rem;
 }
 
 /* ---------- ProgramList_Page styling Start ---------- */
@@ -160,7 +182,7 @@
 .programList_Page .card-body h6 {
   margin-bottom: 1.5rem;
   margin-top: 0;
-  color: rgb(145, 143, 143);
+  color: var(--text-muted);
 }
 
 /* ---------- CodingExample_footer styling Start ---------- */
@@ -168,50 +190,57 @@
   color: black;
   cursor: text;
 }
-.codingExample_footer .right_side .websiteLink:hover {
-  color: var(--main-pink);
-  text-decoration: none;
-}
 
 /* ************************* CodingExample_Page styling End ************************* */
 
-.coursesPage__footer .nav-link {
-  margin: -8px 0;
-  font-size: 15px;
-}
-
-.coursesPage__footer .nav-link:hover {
-  color: var(--main-pink) !important;
-}
-
-.codingExample-first__page {
-  background: linear-gradient(rgba(16, 29, 44, 0.75), rgba(16, 29, 44, 0.75)),
-    url("../Images/codingExample-Page-bg.jpg") center no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 60vh;
-}
-.srearch_btn {
-  border: 2px solid black;
-  border-radius: 0px;
-  background-color: black;
-}
-.codingExample__footer .nav-link {
-  margin: -8px 0;
-  font-size: 15px;
-  color: black;
-}
-.codingExample__footer p span:hover {
-  color: var(--main-pink) !important;
-  cursor: pointer;
-}
-
-.courses-first__page {
-  background: linear-gradient(rgba(16, 29, 44, 0.75), rgba(16, 29, 44, 0.75)),
+/* ************************* Courses_Page styling Start ************************* */
+.courses_page {
+  background: var(--bg-blur),
     url("../Images/coursesPage-bg.jpg") center no-repeat;
   background-size: cover;
   width: 100%;
-  height: 60vh;
+  height: 55vh;
+}
+.courses_page .course_page_content .search_box .button {
+  background-color: black !important;
+  padding: 0.6rem 3.2rem;
+}
+
+/* ---------- Course_page_details styling Start ---------- */
+.course_page_details {
+  margin-top: 10rem;
+}
+.course_page_details .row p a {
+  text-decoration: none;
+  color: var(--text-muted);
+}
+.course_page_details .row .d-flex img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  margin-right: 1rem;
+}
+
+/* ---------- coursePage_footer styling Start ---------- */
+.coursePage_footer .right_side .nav-link:hover {
+  color: var(--main-pink);
+}
+/* ************************* Courses_Page styling End ************************* */
+
+.course_page_details .login {
+  background-color: var(--main-pink);
+  width: 700px;
+  height: 580px;
+}
+.course_page_details .login_from {
+  background-color: white;
+  width: 600px;
+}
+.course_page_details .form-control {
+  margin: 20px 0;
+  padding: 20px 10px;
+  border: none;
+  background-color: whitesmoke;
 }
 
 .ebook-first__page {
@@ -220,19 +249,4 @@
   background-size: cover;
   width: 100%;
   height: 60vh;
-}
-.courses-second__page .login {
-  background-color: var(--main-pink);
-  width: 700px;
-  height: 580px;
-}
-.courses-second__page .login_from {
-  background-color: white;
-  width: 600px;
-}
-.courses-second__page .form-control {
-  margin: 20px 0;
-  padding: 20px 10px;
-  border: none;
-  background-color: whitesmoke;
 }
