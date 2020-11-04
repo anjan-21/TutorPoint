@@ -115,6 +115,9 @@
   font-size: 60px !important;
   color: var(--text-white);
 }
+.home_page_cotent .form-control {
+  border-radius: 0px;
+}
 .home_page_cotent .form_fields {
   width: 90%;
   margin: 0 auto;
@@ -215,6 +218,10 @@
 .course_page_details .row p a {
   text-decoration: none;
   color: var(--text-muted);
+}
+.course_page_details div .navbar-nav li:hover {
+  cursor: pointer;
+  color: var(--main-pink);
 }
 .course_page_details .row .d-flex img {
   height: 30px;
