@@ -201,6 +201,8 @@
   width: 100%;
   height: 55vh;
 }
+
+/* ---------- Course_page_content styling Start ---------- */
 .courses_page .course_page_content .search_box .button {
   background-color: black !important;
   padding: 0.6rem 3.2rem;
@@ -225,28 +227,46 @@
 .coursePage_footer .right_side .nav-link:hover {
   color: var(--main-pink);
 }
+
 /* ************************* Courses_Page styling End ************************* */
 
-.course_page_details .login {
-  background-color: var(--main-pink);
-  width: 700px;
-  height: 580px;
-}
-.course_page_details .login_from {
-  background-color: white;
-  width: 600px;
-}
-.course_page_details .form-control {
-  margin: 20px 0;
-  padding: 20px 10px;
-  border: none;
-  background-color: whitesmoke;
-}
-
-.ebook-first__page {
+/* ************************* Ebook_page styling Start ************************* */
+.ebook_page {
   background: linear-gradient(rgba(16, 29, 44, 0.75), rgba(16, 29, 44, 0.75)),
     url("../Images/ebookPage-bg.jpg") center no-repeat;
   background-size: cover;
   width: 100%;
-  height: 60vh;
+  height: 55vh;
 }
+
+/* ---------- Ebook_page_content styling Start ---------- */
+.ebook_page .ebook_page_content .search_box .button {
+  background-color: black !important;
+  padding: 0.6rem 3.2rem;
+}
+
+/* ---------- Ebook_page_details styling Start ---------- */
+.ebook_page_details {
+  margin: 10rem 0;
+}
+.ebook_page_details .login {
+  background-color: var(--main-pink);
+  width: 700px;
+  height: 620px;
+}
+.ebook_page_details .login_from {
+  background-color: white;
+  width: 600px;
+}
+.ebook_page_details .form-control {
+  margin: 20px 0;
+  padding: 23px 10px;
+  border: none;
+  background-color: whitesmoke;
+}
+
+/* ---------- Ebook_footer styling Start ---------- */
+.ebook_footer .right_side .nav-link:hover {
+  color: var(--main-pink);
+}
+/* ************************* Ebook_page styling End ************************* */
